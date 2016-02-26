@@ -1,7 +1,9 @@
 # dynarein
 > **dyna**mic **re**adme.md to **in**dex.html
 
-This project is based on a [showdown](https://github.com/showdownjs/showdown)
+If your default github repository is `gh-pages` sometimes you don't need to create two separate files like README.md and index.html. If you would like to have a carbon-copy of your README.md file in your index.html, this dynarein is what you might consider using. This project is based on a [showdown](https://github.com/showdownjs/showdown) and take advanteg of [GitHub Markup](https://github.com/github/markup).
+
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Table of Contents
 1. [Author(s)](#authors)
