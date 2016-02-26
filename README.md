@@ -5,6 +5,9 @@ If your default GitHub repository is `gh-pages` sometimes you don't need to crea
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+# Disadvantage
+It is not (Progressive enhancement)[https://en.wikipedia.org/wiki/Progressive_enhancement] solution.
+
 ## Table of Contents
 1. [Author(s)](#authors)
 1. [License](#license)
