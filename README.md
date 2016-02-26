@@ -3,10 +3,11 @@
 
 When your default GitHub repository is `gh-pages` and you want your `index.html` to display `README.md` file content, the **dynarein** is what you might consider. This project is based on a [showdown](https://github.com/showdownjs/showdown) and take advantage of [GitHub Markup](https://github.com/github/markup).
 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+## Advantage
+Maintain only `README.md` using simple markdown ([Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and get a simple website as well.
 
 ## Disadvantage
-It is not [Progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) solution.
+It is not [Progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) solution. But there is sort of fallback provided.
 
 ## Table of Contents
 1. [Author(s)](#authors)
