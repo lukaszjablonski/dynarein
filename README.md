@@ -1,5 +1,5 @@
 # dynarein
-> **Dyna**mic **re**adme.md to **in**dex.html
+> **dyna**mic **re**adme.md to **in**dex.html
 
 This project is based on a [showdown](https://github.com/showdownjs/showdown)
 
