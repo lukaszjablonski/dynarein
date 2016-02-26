@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<!--
+ GitHub README.md file to HTML generator
+ by Lukasz Jablonski [e-eightyseven.com]
+ based on: https://github.com/showdownjs/showdown
+-->
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Swogger</title>
+  <script src="https://cdn.rawgit.com/showdownjs/showdown/master/dist/showdown.min.js"></script>
+  <script>
+   var xhttp = new XMLHttpRequest();
+   var converter = new showdown.Converter();
+   xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+     document.getElementById("readme").innerHTML = converter.makeHtml(xhttp.responseText);
+    }
+   };
+   xhttp.open("GET", "README.md", true);
+   xhttp.send();
+  </script>
+ </head>
+ <body>
+  <div id="readme"></div>
+ </body>
+</html>
