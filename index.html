@@ -8,6 +8,343 @@
  <head>
   <meta charset="UTF-8">
   <title>dynarein - dynamic readme.md to index.html</title>
+  <style>
+   /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+#readme {
+	font-family:"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size:16px;
+	line-height:1.6;
+	word-wrap:break-word
+}
+#readme:before {
+	display:table;
+	content:""
+}
+#readme:after {
+	display:table;
+	clear:both;
+	content:""
+}
+#readme>*:first-child {
+	margin-top:0 !important
+}
+#readme>*:last-child {
+	margin-bottom:0 !important
+}
+#readme a:not([href]) {
+	color:inherit;
+	text-decoration:none
+}
+#readme .absent {
+	color:#c00
+}
+#readme .anchor {
+	display:inline-block;
+	padding-right:2px;
+	margin-left:-18px
+}
+#readme .anchor:focus {
+	outline:none
+}
+#readme h1,#readme h2,#readme h3,#readme h4,#readme h5,#readme h6 {
+	margin-top:1em;
+	margin-bottom:16px;
+	font-weight:bold;
+	line-height:1.4
+}
+#readme h1 .octicon-link,#readme h2 .octicon-link,#readme h3 .octicon-link,#readme h4 .octicon-link,#readme h5 .octicon-link,#readme h6 .octicon-link {
+	color:#000;
+	vertical-align:middle;
+	visibility:hidden
+}
+#readme h1:hover .anchor,#readme h2:hover .anchor,#readme h3:hover .anchor,#readme h4:hover .anchor,#readme h5:hover .anchor,#readme h6:hover .anchor {
+	text-decoration:none
+}
+#readme h1:hover .anchor .octicon-link,#readme h2:hover .anchor .octicon-link,#readme h3:hover .anchor .octicon-link,#readme h4:hover .anchor .octicon-link,#readme h5:hover .anchor .octicon-link,#readme h6:hover .anchor .octicon-link {
+	visibility:visible
+}
+#readme h1 tt,#readme h1 code,#readme h2 tt,#readme h2 code,#readme h3 tt,#readme h3 code,#readme h4 tt,#readme h4 code,#readme h5 tt,#readme h5 code,#readme h6 tt,#readme h6 code {
+	font-size:inherit
+}
+#readme h1 {
+	padding-bottom:0.3em;
+	font-size:2.25em;
+	line-height:1.2;
+	border-bottom:1px solid #eee
+}
+#readme h1 .anchor {
+	line-height:1
+}
+#readme h2 {
+	padding-bottom:0.3em;
+	font-size:1.75em;
+	line-height:1.225;
+	border-bottom:1px solid #eee
+}
+#readme h2 .anchor {
+	line-height:1
+}
+#readme h3 {
+	font-size:1.5em;
+	line-height:1.43
+}
+#readme h3 .anchor {
+	line-height:1.2
+}
+#readme h4 {
+	font-size:1.25em
+}
+#readme h4 .anchor {
+	line-height:1.2
+}
+#readme h5 {
+	font-size:1em
+}
+#readme h5 .anchor {
+	line-height:1.1
+}
+#readme h6 {
+	font-size:1em;
+	color:#777
+}
+#readme h6 .anchor {
+	line-height:1.1
+}
+#readme p,#readme blockquote,#readme ul,#readme ol,#readme dl,#readme table,#readme pre {
+	margin-top:0;
+	margin-bottom:16px
+}
+#readme hr {
+	height:4px;
+	padding:0;
+	margin:16px 0;
+	background-color:#e7e7e7;
+	border:0 none
+}
+#readme ul,#readme ol {
+	padding-left:2em
+}
+#readme ul.no-list,#readme ol.no-list {
+	padding:0;
+	list-style-type:none
+}
+#readme ul ul,#readme ul ol,#readme ol ol,#readme ol ul {
+	margin-top:0;
+	margin-bottom:0
+}
+#readme li>p {
+	margin-top:16px
+}
+#readme dl {
+	padding:0
+}
+#readme dl dt {
+	padding:0;
+	margin-top:16px;
+	font-size:1em;
+	font-style:italic;
+	font-weight:bold
+}
+#readme dl dd {
+	padding:0 16px;
+	margin-bottom:16px
+}
+#readme blockquote {
+	padding:0 15px;
+	color:#777;
+	border-left:4px solid #ddd
+}
+#readme blockquote>:first-child {
+	margin-top:0
+}
+#readme blockquote>:last-child {
+	margin-bottom:0
+}
+#readme table {
+	display:block;
+	width:100%;
+	overflow:auto;
+	word-break:normal;
+	word-break:keep-all
+}
+#readme table th {
+	font-weight:bold
+}
+#readme table th,#readme table td {
+	padding:6px 13px;
+	border:1px solid #ddd
+}
+#readme table tr {
+	background-color:#fff;
+	border-top:1px solid #ccc
+}
+#readme table tr:nth-child(2n) {
+	background-color:#f8f8f8
+}
+#readme img {
+	max-width:100%;
+	box-sizing:content-box;
+	background-color:#fff
+}
+#readme img[align=right] {
+	padding-left:20px
+}
+#readme img[align=left] {
+	padding-right:20px
+}
+#readme .emoji {
+	max-width:none;
+	background-color:transparent
+}
+#readme span.frame {
+	display:block;
+	overflow:hidden
+}
+#readme span.frame>span {
+	display:block;
+	float:left;
+	width:auto;
+	padding:7px;
+	margin:13px 0 0;
+	overflow:hidden;
+	border:1px solid #ddd
+}
+#readme span.frame span img {
+	display:block;
+	float:left
+}
+#readme span.frame span span {
+	display:block;
+	padding:5px 0 0;
+	clear:both;
+	color:#333
+}
+#readme span.align-center {
+	display:block;
+	overflow:hidden;
+	clear:both
+}
+#readme span.align-center>span {
+	display:block;
+	margin:13px auto 0;
+	overflow:hidden;
+	text-align:center
+}
+#readme span.align-center span img {
+	margin:0 auto;
+	text-align:center
+}
+#readme span.align-right {
+	display:block;
+	overflow:hidden;
+	clear:both
+}
+#readme span.align-right>span {
+	display:block;
+	margin:13px 0 0;
+	overflow:hidden;
+	text-align:right
+}
+#readme span.align-right span img {
+	margin:0;
+	text-align:right
+}
+#readme span.float-left {
+	display:block;
+	float:left;
+	margin-right:13px;
+	overflow:hidden
+}
+#readme span.float-left span {
+	margin:13px 0 0
+}
+#readme span.float-right {
+	display:block;
+	float:right;
+	margin-left:13px;
+	overflow:hidden
+}
+#readme span.float-right>span {
+	display:block;
+	margin:13px auto 0;
+	overflow:hidden;
+	text-align:right
+}
+#readme code,#readme tt {
+	padding:0;
+	padding-top:0.2em;
+	padding-bottom:0.2em;
+	margin:0;
+	font-size:85%;
+	background-color:rgba(0,0,0,0.04);
+	border-radius:3px
+}
+#readme code:before,#readme code:after,#readme tt:before,#readme tt:after {
+	letter-spacing:-0.2em;
+	content:"\00a0"
+}
+#readme code br,#readme tt br {
+	display:none
+}
+#readme del code {
+	text-decoration:inherit
+}
+#readme pre>code {
+	padding:0;
+	margin:0;
+	font-size:100%;
+	word-break:normal;
+	white-space:pre;
+	background:transparent;
+	border:0
+}
+#readme .highlight {
+	margin-bottom:16px
+}
+#readme .highlight pre,#readme pre {
+	padding:16px;
+	overflow:auto;
+	font-size:85%;
+	line-height:1.45;
+	background-color:#f7f7f7;
+	border-radius:3px
+}
+#readme .highlight pre {
+	margin-bottom:0;
+	word-break:normal
+}
+#readme pre {
+	word-wrap:normal
+}
+#readme pre code,#readme pre tt {
+	display:inline;
+	max-width:initial;
+	padding:0;
+	margin:0;
+	overflow:initial;
+	line-height:inherit;
+	word-wrap:normal;
+	background-color:transparent;
+	border:0
+}
+#readme pre code:before,#readme pre code:after,#readme pre tt:before,#readme pre tt:after {
+	content:normal
+}
+#readme kbd {
+	display:inline-block;
+	padding:3px 5px;
+	font-size:11px;
+	line-height:10px;
+	color:#555;
+	vertical-align:middle;
+	background-color:#fcfcfc;
+	border:solid 1px #ccc;
+	border-bottom-color:#bbb;
+	border-radius:3px;
+	box-shadow:inset 0 -1px 0 #bbb
+}
+  </style>
   <script src="https://cdn.rawgit.com/showdownjs/showdown/master/dist/showdown.min.js"></script>
   <script>
    var xhttp = new XMLHttpRequest();
