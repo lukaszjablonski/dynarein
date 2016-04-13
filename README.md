@@ -9,12 +9,11 @@ Maintain only `README.md` using simple markdown ([Markdown Cheatsheet](https://g
 ## Disadvantage
 It is not [Progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) solution. But there is sort of fallback provided.
 
-## Table of Contents
-1. [Author(s)](#authors)
-1. [License](#license)
+## Demo
+http://lukaszjablonski.github.io/dynarein/
 
-## Author(s)
-*   Lukasz Jablonski
+## Author
+Lukasz Jablonski
 
 ## License
 Distributed under MIT License
