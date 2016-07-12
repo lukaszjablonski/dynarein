@@ -10,97 +10,96 @@
   <title>dynarein - dynamic readme.md to index.html</title>
   <style>
    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-#readme {
-	font-family:"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size:16px;
-	line-height:1.6;
-	word-wrap:break-word
-}
-#readme:before {
-	display:table;
-	content:""
-}
-#readme:after {
-	display:table;
-	clear:both;
-	content:""
-}
-#readme>*:first-child {
-	margin-top:0 !important
-}
-#readme>*:last-child {
-	margin-bottom:0 !important
-}
-#readme a:not([href]) {
-	color:inherit;
-	text-decoration:none
-}
-#readme .absent {
-	color:#c00
-}
-#readme .anchor {
-	display:inline-block;
-	padding-right:2px;
-	margin-left:-18px
-}
-#readme .anchor:focus {
-	outline:none
-}
-#readme h1,#readme h2,#readme h3,#readme h4,#readme h5,#readme h6 {
-	margin-top:1em;
-	margin-bottom:16px;
-	font-weight:bold;
-	line-height:1.4
-}
-#readme h1 .octicon-link,#readme h2 .octicon-link,#readme h3 .octicon-link,#readme h4 .octicon-link,#readme h5 .octicon-link,#readme h6 .octicon-link {
-	color:#000;
-	vertical-align:middle;
-	visibility:hidden
-}
-#readme h1:hover .anchor,#readme h2:hover .anchor,#readme h3:hover .anchor,#readme h4:hover .anchor,#readme h5:hover .anchor,#readme h6:hover .anchor {
-	text-decoration:none
-}
-#readme h1:hover .anchor .octicon-link,#readme h2:hover .anchor .octicon-link,#readme h3:hover .anchor .octicon-link,#readme h4:hover .anchor .octicon-link,#readme h5:hover .anchor .octicon-link,#readme h6:hover .anchor .octicon-link {
-	visibility:visible
-}
-#readme h1 tt,#readme h1 code,#readme h2 tt,#readme h2 code,#readme h3 tt,#readme h3 code,#readme h4 tt,#readme h4 code,#readme h5 tt,#readme h5 code,#readme h6 tt,#readme h6 code {
-	font-size:inherit
-}
-#readme h1 {
-	padding-bottom:0.3em;
-	font-size:2.25em;
-	line-height:1.2;
-	border-bottom:1px solid #eee
-}
-#readme h1 .anchor {
-	line-height:1
-}
-#readme h2 {
-	padding-bottom:0.3em;
-	font-size:1.75em;
-	line-height:1.225;
-	border-bottom:1px solid #eee
-}
-#readme h2 .anchor {
-	line-height:1
-}
-#readme h3 {
-	font-size:1.5em;
-	line-height:1.43
-}
-#readme h3 .anchor {
-	line-height:1.2
-}
-#readme h4 {
-	font-size:1.25em
-}
-#readme h4 .anchor {
-	line-height:1.2
-}
-#readme h5 {
-	font-size:1em
-}
+    #readme {
+     font-family:"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     font-size:16px;
+     line-height:1.6;
+     word-wrap:break-word;
+    }
+    #readme:before {
+     display:table;
+     content:"";
+    }
+    #readme:after {
+     display:table;
+     clear:both;
+     content:"";
+    }
+    #readme>*:first-child {
+     margin-top:0 !important;
+    }
+    #readme>*:last-child {
+     margin-bottom:0 !important;
+    }
+    #readme a:not([href]) {
+     color:inherit;
+     text-decoration:none;
+    }
+    #readme .absent {
+     color:#c00;
+    }
+    #readme .anchor {
+     display:inline-block;
+     padding-right:2px;
+     margin-left:-18px;
+    }
+    #readme .anchor:focus {
+     outline:none;
+    }
+    #readme h1,#readme h2,#readme h3,#readme h4,#readme h5,#readme h6 {
+     margin-top:1em;
+     margin-bottom:16px;
+     font-weight:bold;
+     line-height:1.4;
+    }
+    #readme h1 .octicon-link,#readme h2 .octicon-link,#readme h3 .octicon-link,#readme h4 .octicon-link,#readme h5 .octicon-link,#readme h6 .octicon-link {
+     color:#000;
+     vertical-align:middle;
+     visibility:hidden;
+    }
+    #readme h1:hover .anchor,#readme h2:hover .anchor,#readme h3:hover .anchor,#readme h4:hover .anchor,#readme h5:hover .anchor,#readme h6:hover .anchor {
+     text-decoration:none;
+    }
+    #readme h1:hover .anchor .octicon-link,#readme h2:hover .anchor .octicon-link,#readme h3:hover .anchor .octicon-link,#readme h4:hover .anchor .octicon-link,#readme h5:hover .anchor .octicon-link,#readme h6:hover .anchor .octicon-link {
+     visibility:visible;
+    }
+    #readme h1 tt,#readme h1 code,#readme h2 tt,#readme h2 code,#readme h3 tt,#readme h3 code,#readme h4 tt,#readme h4 code,#readme h5 tt,#readme h5 code,#readme h6 tt,#readme h6 code {
+     font-size:inherit;
+    }
+    #readme h1 {
+     padding-bottom:0.3em;
+     font-size:2.25em;
+     line-height:1.2;
+     border-bottom:1px solid #eee;
+    }
+    #readme h1 .anchor {
+     line-height:1;
+    }
+    #readme h2 {
+     padding-bottom:0.3em;
+     font-size:1.75em;
+     line-height:1.225;
+     border-bottom:1px solid #eee;
+    }
+    #readme h2 .anchor {
+     line-height:1;
+    }
+    #readme h3 {
+     font-size:1.5em;
+     line-height:1.43;
+    }
+    #readme h3 .anchor {
+     line-height:1.2;
+    }
+    #readme h4 {
+     font-size:1.25em;
+    }
+   #readme h4 .anchor {
+    line-height:1.2;
+   }
+   #readme h5 {
+    font-size:1em;
+   }
 #readme h5 .anchor {
 	line-height:1.1
 }
@@ -359,10 +358,13 @@
   </script>
  </head>
  <body>
-  <div id="readme">
-   <noscript>
-    <p>This site needs Javascript to be enabled. Turn on Javascript, or see <a href="https://github.com/lukaszjablonski/dynarein">GitHub Repository</a>.</p>
-   </noscript>
+  <div class="container">
+  	<style scoped>@import 'https://assets-cdn.github.com/assets/frameworks-b1642e37b45963af25ee113eaec46c25df28655ab893baf240e31a7dd0a215ea.css'</style>
+   <div id="readme">
+    <noscript>
+     <p>This site needs Javascript to be enabled. Turn on Javascript, or see <a href="https://github.com/lukaszjablonski/dynarein">GitHub Repository</a>.</p>
+    </noscript>
+   </div>
   </div>
  </body>
 </html>
