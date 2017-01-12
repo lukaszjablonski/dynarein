@@ -1,7 +1,7 @@
 # dynarein
 > **dyna**mic **re**adme.md to **in**dex.html
 
-File `index.html` in `gh-pages` will display `README.md` file content. This is based on a [showdown](https://github.com/showdownjs/showdown) and take advantage of [GitHub Markup](https://github.com/github/markup).
+File `index.html` will display `README.md` file content. This is based on a [showdown](https://github.com/showdownjs/showdown) and take advantage of [GitHub Markup](https://github.com/github/markup).
 
 ## Advantage
 Maintain only `README.md` using simple markdown ([Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and get a simple website as well.
