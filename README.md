@@ -4,7 +4,7 @@
 File `index.html` will display `README.md` file content. This is based on a [showdown](https://github.com/showdownjs/showdown) and take advantage of [GitHub Markup](https://github.com/github/markup).
 
 ## Advantage
-Maintain only `README.md` using simple markdown ([Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and get a simple website as well.
+Maintain only `README.md` using simple markdown ([Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and get a website as well.
 
 ## Disadvantage
 It is not [Progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) solution. But there is sort of fallback provided.
@@ -43,3 +43,4 @@ THE SOFTWARE.
 
 ## Alternatives
 https://richjenks.com/github-pages-from-readme/
+9.02.2017: I've just realize that when GitHub Pages source is set to "Master" branch and there is no `index.html`, `README.md` is processed and displayed as a website.
