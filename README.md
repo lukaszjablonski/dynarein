@@ -42,5 +42,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ## Alternatives
-https://richjenks.com/github-pages-from-readme/
-9.02.2017: I've just realize that when GitHub Pages source is set to "Master" branch and there is no `index.html`, `README.md` is processed and displayed as a website.
+* https://richjenks.com/github-pages-from-readme/
+* 9.02.2017: I've just realize that when GitHub Pages source is set to "Master" branch and there is no `index.html`, `README.md` is processed and displayed as a website.
