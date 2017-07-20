@@ -11,4 +11,4 @@ Lukasz Jablonski
 
 ## Alternatives
 * https://richjenks.com/github-pages-from-readme/
-* 9.02.2017: I've just realize that when GitHub Pages source is set to "Master" branch and there is no `index.html`, `README.md` is processed and displayed as a website.
+* If in GitHub Pages branch there is no `index.html`, `README.md` is processed and displayed as a website. See: https://github.com/lukaszjablonski/gh-pages-readme.md
